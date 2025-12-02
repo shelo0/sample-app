@@ -30,7 +30,7 @@ pipeline {
             steps {
                 sh '''
                     sleep 3
-                    curl -i http://localhost:5050/
+                    curl -i http://host.docker.internal:5050/
                 '''
             }
         }
