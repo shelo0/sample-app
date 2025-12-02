@@ -1,9 +1,10 @@
 pipeline {
     agent any
+
     stages {
         stage('Clone repo') {
             steps {
-                git 'https://github.com/shelo0/sample-app.git'
+                git branch: 'main', url: 'https://github.com/shelo0/sample-app.git'
             }
         }
 
